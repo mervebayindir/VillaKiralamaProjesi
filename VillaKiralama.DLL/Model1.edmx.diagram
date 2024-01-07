@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a7aecc3bda804bebbf0e7cc9391abcd9" Name="Diagram1">
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.VillaResimler" Width="1.5" PointX="0.5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.ilceler" Width="1.5" PointX="0.625" PointY="9.75" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.iller" Width="1.5" PointX="6" PointY="5.625" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.Kiralamalar" Width="1.5" PointX="8.25" PointY="4.75" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.Musteriler" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.sysdiagrams" Width="1.5" PointX="8.875" PointY="1.375" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.VillaKategorileri" Width="1.5" PointX="3.75" PointY="4.5" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.Villalar" Width="1.5" PointX="3" PointY="7.75" />
+        <EntityTypeShape EntityType="VillaKiralamaDBModel.VillaDetay" Width="1.5" PointX="5.25" PointY="11.75" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_ilceler_iller" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_Musteriler_ilceler" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_Villalar_ilceler" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_Kiralamalar_Musteriler" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_Kiralamalar_Villalar" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_Villalar_VillaKategorileri" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_VillaDetay_Villalar" />
+        <AssociationConnector Association="VillaKiralamaDBModel.FK_VillaResimler_Villalar" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
